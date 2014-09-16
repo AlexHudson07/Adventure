@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FnA-dX-cJe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWT-E3-l1V">
+                                <rect key="frame" x="42" y="321" width="70" height="30"/>
+                                <state key="normal" title="Eat Boxes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VDB-l5-qEH" kind="show" id="SLZ-fH-fVC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-Sz-imm">
+                                <rect key="frame" x="200" y="321" width="104" height="30"/>
+                                <state key="normal" title="Clear up boxes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iJA-ef-6F1" kind="show" id="j9E-6b-Dbj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan went to the Mobile Makers Space and found empty pizza boxes" translatesAutoresizingMaskIntoConstraints="NO" id="FeF-Qd-WXL">
+                                <rect key="frame" x="40" y="217" width="240" height="101"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stickman" translatesAutoresizingMaskIntoConstraints="NO" id="eah-oR-FNy">
+                                <rect key="frame" x="40" y="81" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-NX-PH0">
+                                <rect key="frame" x="79" y="384" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YiA-49-pEF"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="clearUpBoxesButton" destination="OiD-Sz-imm" id="Hka-Bd-BKm"/>
+                        <outlet property="eatBoxesButton" destination="qWT-E3-l1V" id="JZe-En-4Ce"/>
+                        <outlet property="endingLabel" destination="EiR-NX-PH0" id="DLj-al-svZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="-373"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="5kK-r3-LVY">
+            <objects>
+                <viewController id="iJA-ef-6F1" customClass="StoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y2f-MZ-dUI"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0r-gA-bNC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K7b-xi-42V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l41-g7-VnG">
+                                <rect key="frame" x="96" y="269" width="129" height="30"/>
+                                <state key="normal" title="Ryan Gets Married">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="12B-NF-AEN" kind="presentation" id="Z87-tF-35j"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PizzaBoxTrash" highlightedImage="stickman" translatesAutoresizingMaskIntoConstraints="NO" id="uJp-RX-vng">
+                                <rect key="frame" x="40" y="102" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9d-6n-jX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="-683"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="Pqj-7m-QCg">
+            <objects>
+                <viewController id="12B-NF-AEN" customClass="StoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rJg-eH-5bq"/>
+                        <viewControllerLayoutGuide type="bottom" id="sQr-Sp-enb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lOi-Fq-3Hi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married and has four children. The End. " translatesAutoresizingMaskIntoConstraints="NO" id="8BN-Vw-KG8">
+                                <rect key="frame" x="16" y="181" width="288" height="114"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlT-9V-ocg">
+                                <rect key="frame" x="137" y="333" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="P4M-6q-hUN" kind="unwind" unwindAction="unwindMarriedSegue:" id="mWM-mP-cUl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="nah-8o-qTa">
+                                <rect key="frame" x="40" y="28" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zul-Uz-MFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="P4M-6q-hUN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="-683"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="ugt-rN-YXH">
+            <objects>
+                <viewController id="iny-Rb-eiK" customClass="StoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ubz-GC-X8e"/>
+                        <viewControllerLayoutGuide type="bottom" id="GkA-MW-mUb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="idu-91-tb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets his stomach pumped. The End." translatesAutoresizingMaskIntoConstraints="NO" id="vwP-o2-Pj0">
+                                <rect key="frame" x="16" y="221" width="288" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stomach" translatesAutoresizingMaskIntoConstraints="NO" id="sC3-rx-eQA">
+                                <rect key="frame" x="40" y="109" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbx-JD-RyE">
+                                <rect key="frame" x="137" y="364" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k80-VR-sCv" kind="unwind" unwindAction="unwindTestSegue:" id="OGV-Vn-0XI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AON-dS-fgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="k80-VR-sCv" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1890" y="-45"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="Cai-AQ-kMz">
+            <objects>
+                <viewController id="VDB-l5-qEH" customClass="StoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nmM-gE-hj6"/>
+                        <viewControllerLayoutGuide type="bottom" id="DL4-yM-Sby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ei-bR-Q58">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN4-kI-UoU">
+                                <rect key="frame" x="132" y="332" width="57" height="30"/>
+                                <state key="normal" title="Hospital">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iny-Rb-eiK" kind="show" id="bKJ-td-c79"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizza-box" translatesAutoresizingMaskIntoConstraints="NO" id="J5Q-ot-iz2">
+                                <rect key="frame" x="40" y="180" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ryan Ate the Boxex and Felt Sick" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbL-Ee-x0J">
+                                <rect key="frame" x="32" y="88" width="257" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-d7-6fH">
+                                <rect key="frame" x="139" y="412" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="testLabel" destination="SYo-d7-6fH" id="8IT-ZY-ODq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upj-Md-daa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qOO-D2-FX7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FnA-dX-cJe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rRT-Uh-boT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="KNQ-N3-92k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztu-kz-x8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="-362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Family" width="1014" height="559"/>
+        <image name="PizzaBoxTrash" width="400" height="256"/>
+        <image name="pizza-box" width="600" height="600"/>
+        <image name="stickman" width="366" height="594"/>
+        <image name="stomach" width="282" height="299"/>
+    </resources>
+</document>
